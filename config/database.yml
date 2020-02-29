@@ -12,6 +12,7 @@ default: &default
 
 development:
   <<: *default
+  host: localhost
   database: ci_dev
 
 # Warning: The database defined as "test" will be erased and
@@ -19,6 +20,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  host: localhost
   database: ci_test
 
 production:
